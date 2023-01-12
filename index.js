@@ -11,13 +11,12 @@ app.use(express.json());
 
 
 // hrSolution server Database connect
-const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
-const uri = `mongodb+srv://${process.env.SITE_NAME}:${process.env.SITE_KEY}@cluster0.mlxcjcs.mongodb.net/?retryWrites=true&w=majority`;
-const client = new MongoClient(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverApi: ServerApiVersion.v1,
-});
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = `mongodb+srv://${process.env.SITE_NAME}:${process.env.SITE_KEY}@cluster0.7mwsjuk.mongodb.net/?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
+
 
 // hrSolution server Database run
 async function run() {
