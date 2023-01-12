@@ -32,9 +32,7 @@ async function run() {
 
 // All collection 
 const userCollection = client.db("HrSolutionServer").collection("users");
-const bannerImgCollect = client.db("HrSolutionServer").collection("bannerImg");
-const collectColorCode = client.db('HrSolutionServer').collection("colorCode")
-const todoItemsCollect = client.db('HrSolutionServer').collection("todoItems")
+
 
 //Post to saver Users
 app.post("/users", async (req, res) => {
